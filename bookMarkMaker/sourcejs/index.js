@@ -18,14 +18,11 @@ function newrow() {
     nameInput.name = `name${rowCount}`;
     nameInput.placeholder = 'Enter name';
 
-    const encryptionCheckbox = document.createElement('input');
-    encryptionCheckbox.type = 'checkbox';
-    encryptionCheckbox.id = `encryption${rowCount}`;
-    encryptionCheckbox.name = `encryption${rowCount}`;
+    
 
     newRow.appendChild(linkInput);
     newRow.appendChild(nameInput);
-    newRow.appendChild(encryptionCheckbox);
+    
 
     form.insertBefore(newRow, form.childNodes[form.childNodes.length - 1]);
 }
